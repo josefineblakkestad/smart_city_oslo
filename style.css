@@ -1,0 +1,198 @@
+* {
+    color: black;
+}
+
+/*elements*/
+img {
+    max-width: 100%; 
+    height: auto;
+}
+
+hr  {
+    width: 50%;
+    border: 5px solid;
+    position: center;
+    color: #4CA4EB;
+
+}
+
+iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+/*classes*/
+.main_container {
+    max-width: 90em;
+    margin: 0 auto;
+}
+.background {
+    background-color: #d9d9d9;
+    max-width: 90em;
+    height: auto;
+    
+}
+
+.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .anton-blue {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #4CA4EB;
+    font-size: 3em;
+  }
+
+
+.dosis-regular {
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.why_images {
+    border: black solid 1px;
+    max-width: 23.9em;
+    height: auto;
+}
+
+.why_phrases_rectangles {
+    background-color: #F5F5F5;
+    max-width: 22em;
+    height: auto;
+    border: black solid 1px;
+    padding: 1em
+}
+.what_makes_phrases {
+    font-size: 1.5em;
+
+}
+
+.rectangle {
+    background-color: #5D94C0;
+    
+}
+
+
+/*id's*/
+#top_banner {
+    height: 7.75em;
+    max-width: 90em;
+    grid-area: ban;
+}
+
+#intro_header {
+    font-size: 14em;
+    grid-area: osl;
+}
+
+#intro_image {
+    grid-area: im1;
+
+}
+
+#intro_phrase {
+    font-size: 3em;
+    grid-area: inp;
+
+}
+
+
+#why_rectangle {
+    height: auto;
+    max-width: 90em;
+    grid-area: why;
+}
+
+#what_makes {
+    font-size: 4em;
+    grid-area: whh;
+}
+
+#why_img_1 {
+    grid-area: wh1;
+}
+
+#why_img_2 {
+    grid-area: wh2;
+    
+}
+
+#why_img_3 {
+    grid-area: wh3;
+    
+}
+
+#why_ZE {
+    grid-area: ze;
+}
+
+#why_FB {
+    grid-column: fb;
+}
+
+#why_SOA {
+    grid-area: soa;
+}
+
+
+#innovators {
+    font-size: 3em;
+}
+
+#keep_working {
+    font-size: 3em;
+}
+
+#carbon_link {
+    font-size: 3em;
+    color: black;
+
+}
+
+#carbon_link:hover {
+    color: #4CA4EB;
+}
+
+#bottom_rectangle {
+    height: auto;
+    max-width: 49em;
+}
+
+
+
+
+
+
+/*grid layout*/
+.main_container {
+    display: grid;
+    column-gap: 1em;
+    grid-template: 
+        "ban ban ban ban ban ban ban ban ban ban ban ban"
+        "osl osl osl osl osl im1 im1 im1 im1 im1 im1 im1"
+        " .  inp inp inp inp  .   .   .   .   .   .   . "
+        "why why why why why why why why why why why why"
+
+
+
+}
+
+.rectangle {
+    display: grid;
+    column-gap: 1em;
+    grid-template: 
+        "whh whh whh whh whh whh whh whh whh whh whh whh"
+        "wh1 wh1 wh1 wh1 wh2 wh2 wh2 wh2 wh3 wh3 wh3 wh3"
+        "ze  ze  ze  ze  fb  fb  fb  fb  soa soa soa soa"
+}
