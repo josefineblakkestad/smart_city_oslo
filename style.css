@@ -42,6 +42,7 @@ iframe {
     font-family: "Anton", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 3em;
   }
 
   .anton-blue {
@@ -146,12 +147,21 @@ iframe {
 }
 
 
-#innovators {
-    font-size: 3em;
+#opera_image {
+    grid-area: im4;
 }
 
 #keep_working {
-    font-size: 3em;
+    grid-area: kew;
+}
+
+#innovators {
+    grid-area: inn;
+
+}
+
+#future_image{
+    grid-area: im5;
 }
 
 #carbon_link {
@@ -164,9 +174,15 @@ iframe {
     color: #4CA4EB;
 }
 
+
+
 #bottom_rectangle {
     height: auto;
     max-width: 49em;
+}
+
+#opera_roof {
+    grid-area: im6;
 }
 
 
@@ -183,6 +199,13 @@ iframe {
         "osl osl osl osl osl im1 im1 im1 im1 im1 im1 im1"
         " .  inp inp inp inp  .   .   .   .   .   .   . "
         "why why why why why why why why why why why why"
+        " .   .   .   .   .   .   .   .   .   .   .   . "
+        "im4 im4 im4 im4 im4 im4 im4 kew kew kew kew kew"
+        "inn inn inn inn inn im5 im5 im5 im5 im5 im5 im5"
+        " .   .   .   .   .   .   .   .   .   .   .   . "
+        "im6 im6 im6 im6 im6 im6 im6 im6 im6 im6 im6 im6"
+
+
 
 
 
