@@ -5,7 +5,7 @@
 /*elements*/
 img {
     max-width: 100%; 
-    height: auto;
+    height: 100%;
 }
 
 hr  {
@@ -22,15 +22,15 @@ iframe {
 }
 
 
-
-
-
-
 /*classes*/
 .main_container {
-    max-width: 90em;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #D9D9D9;
 }
+
 .background {
     background-color: #d9d9d9;
     max-width: 90em;
@@ -60,22 +60,88 @@ iframe {
   font-style: normal;
 }
 
+#spacer1 {
+    height: 8rem;
+}
+
+.introduction {
+    max-width: 75em;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.introduction_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+@media (min-width: 75em) {
+    #intro_phrase {
+        width: 22rem;
+    }
+}
+
+#spacer2 {
+    height: 12rem;
+}
+
+.why_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #5D94C0;
+    width: 100%;
+}
+
+#spacer3 {
+    height: 4rem;
+}
+
+#spacer4 {
+    height: 2rem;
+}
+
+.why_card_panel {
+    /* display: flex; */
+    /* flex-direction: row;
+    gap: 1rem;
+    max-width: 80rem;
+    overflow: hidden; */
+    /* border: black solid 1px; */
+    /* background-color: #F5F5F5; */
+    align-items: center;
+    /* overflow: hidden; */
+}
+
+
 .why_images {
-    border: black solid 1px;
-    max-width: 23.9em;
+    /* border: black solid 1px; */
+    /* max-width: 23.9em; */
+    /* height: auto; */
+    width: 100%;
     height: auto;
+    object-fit: fill;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: #F5F5F5;
 }
 
 .why_phrases_rectangles {
+    /* border: black solid 1px; */
     background-color: #F5F5F5;
-    max-width: 22em;
-    height: auto;
-    border: black solid 1px;
-    padding: 1em
+    height: 100%;
+    padding: 1em;
+    text-align: center;
+    overflow: hidden;
+    box-sizing: border-box;
 }
+
 .what_makes_phrases {
     font-size: 1.5em;
-
 }
 
 .rectangle {
@@ -83,12 +149,12 @@ iframe {
     
 }
 
-
 /*id's*/
 #top_banner {
     height: 7.75em;
-    max-width: 90em;
-    grid-area: ban;
+    width: 100%;
+    /* max-width: 90em; */
+    /* grid-area: ban; */
 }
 
 #intro_header {
@@ -111,7 +177,7 @@ iframe {
 #why_rectangle {
     height: auto;
     max-width: 90em;
-    grid-area: why;
+    /* grid-area: why; */
 }
 
 #what_makes {
@@ -138,7 +204,7 @@ iframe {
 }
 
 #why_FB {
-    grid-column: fb;
+    grid-area: fb;
 }
 
 #why_SOA {
@@ -175,7 +241,7 @@ iframe {
 
 
 /*grid layout*/
-.main_container {
+/* .main_container {
     display: grid;
     column-gap: 1em;
     grid-template: 
@@ -195,4 +261,13 @@ iframe {
         "whh whh whh whh whh whh whh whh whh whh whh whh"
         "wh1 wh1 wh1 wh1 wh2 wh2 wh2 wh2 wh3 wh3 wh3 wh3"
         "ze  ze  ze  ze  fb  fb  fb  fb  soa soa soa soa"
-}
+} */
+
+.why_card_panel {
+    max-width: 80rem;
+    display: grid;
+    column-gap: 1em;
+    grid-template:
+        "wh1 wh2 wh3" 
+        "ze  fb  soa" 
+} 
