@@ -41,7 +41,8 @@ iframe {
 }
 
 .rectangle {
-    background-color: #5D94C0;    
+    background-color: #5D94C0;  
+    padding: 1em;  
 }
 
 .anton-regular {
@@ -78,6 +79,7 @@ iframe {
 
 #intro_image {
     grid-area: ini;
+    object-fit: contain; /*doesn't work*/
 }
 
 .introduction {
@@ -85,7 +87,7 @@ iframe {
     max-width: 76em;
     display: grid;
     column-gap: 1rem;
-   
+    object-fit: contain; /*doesn't work*/
 }
 
 #intro_header {
@@ -173,6 +175,7 @@ iframe {
 
 #what_makes {
     font-size: 4em;
+    text-align: center;
 }
 
 .what_makes_phrases {
@@ -183,6 +186,17 @@ iframe {
     height: 8rem;
 }
 
+/*
+#spacer4 {
+    height: 2rem;
+}
+
+#spacer5 {
+    height: 2rem;
+}
+*/
+
+/*dosnt do anything*/
 #spacer6 {
     height: 8rem;
 }
@@ -202,12 +216,15 @@ iframe {
     max-width: 76rem;
     display: grid;
     align-items: center;
+    column-gap: 1em;
+
 }
 
 
 #future_plans_image {
     grid-area: fpi;
     max-width: 100%;
+    text-align: right;
 }
 
 #future_plans_text {
@@ -220,6 +237,7 @@ iframe {
     max-width: 76rem;
     display: grid;
     align-items: center;
+    column-gap: 1em;
 }
 
 #innovators {
@@ -245,6 +263,8 @@ iframe {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    height: auto;
+    max-width: 49em;
 }
 
 
@@ -258,15 +278,80 @@ iframe {
     color: #4CA4EB;
 }
 
-#bottom_rectangle {
-    height: auto;
-    max-width: 49em;
+#image-credits-header {
+    font-size: 3em;
+}
+
+#image-credits {
+    font-size: 2em;
 }
 
 
 
 /*grid layout*/
-@media(min-width: 76em) {
+/*phone*/
+    .introduction {
+        grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+        grid-template-rows: auto; /* Explicitly define that there's only one row */
+        grid-template-areas: 
+         "int int int int" 
+         "ini ini ini ini";
+    }
+
+    .why_card_panel {
+        grid-template:
+            "wh1"
+            "ze"
+            "wh2"
+            "fb"
+            "wh3"
+            "soa" 
+            
+    }
+
+    #read_more {
+        grid-template: 
+            "rmi rmi rmi rmi rmi rmi rmi rmi rmi" minmax(30rem, auto)
+            "rmt rmt rmt rmt rmt rmt rmt rmt rmt" minmax(30rem, auto)
+    }
+
+    #future_plans {
+        grid-template: 
+            "fpt fpt fpt fpt fpt fpt fpt fpt fpt" minmax(30rem, auto)
+            "fpi fpi fpi fpi fpi fpi fpi fpi fpi" minmax(30rem, auto)
+    }
+
+    
+/*tablet*/
+@media(min-width: 60em) {
+    .introduction {
+        grid-template-columns: repeat(9, 1fr); /* 9 equal columns */
+        grid-template-rows: auto; /* Explicitly define that there's only one row */
+        grid-template-areas: 
+         "int int int int ini ini ini ini ini";
+    }
+
+    .why_card_panel {
+        grid-template:
+            "wh1 wh2 wh3" 
+            "ze  fb  soa" 
+    }
+
+    #read_more {
+        grid-template: 
+            "rmi rmi rmi rmi rmi rmi rmi rmi rmi" minmax(30rem, auto)
+            "rmt rmt rmt rmt rmt rmt rmt rmt rmt" minmax(30rem, auto)
+    }
+
+    #future_plans {
+        grid-template: 
+            "fpt fpt fpt fpt fpt fpt fpt fpt fpt" minmax(30rem, auto)
+            "fpi fpi fpi fpi fpi fpi fpi fpi fpi" minmax(30rem, auto)
+    }
+}
+
+/*desktop*/
+@media(min-width: 84em) {
     .introduction {
         grid-template-columns: repeat(12, 1fr); /* 12 equal columns */
         grid-template-rows: auto; /* Explicitly define that there's only one row */
@@ -288,3 +373,5 @@ iframe {
         grid-template: "fpt fpt fpt fpt fpt fpi fpi fpi fpi fpi fpi fpi" minmax(30rem, auto);
     }
 }
+
+
