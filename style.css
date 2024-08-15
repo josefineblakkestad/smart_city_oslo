@@ -79,7 +79,7 @@ iframe {
 
 #intro_image {
     grid-area: ini;
-    object-fit: contain; /*doesn't work*/
+    object-fit: ; /*doesn't work*/
 }
 
 .introduction {
@@ -186,7 +186,7 @@ iframe {
     height: 8rem;
 }
 
-/*
+
 #spacer4 {
     height: 2rem;
 }
@@ -194,7 +194,7 @@ iframe {
 #spacer5 {
     height: 2rem;
 }
-*/
+
 
 /*dosnt do anything*/
 #spacer6 {
@@ -299,6 +299,7 @@ iframe {
     }
 
     .why_card_panel {
+        row-gap: 1em;
         grid-template:
             "wh1"
             "ze"
@@ -308,6 +309,7 @@ iframe {
             "soa" 
             
     }
+
 
     #read_more {
         grid-template: 
@@ -329,6 +331,10 @@ iframe {
         grid-template-rows: auto; /* Explicitly define that there's only one row */
         grid-template-areas: 
          "int int int int ini ini ini ini ini";
+    }
+
+    #intro_header {
+        font-size: 14em;
     }
 
     .why_card_panel {
