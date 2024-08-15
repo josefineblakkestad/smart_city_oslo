@@ -265,7 +265,7 @@ iframe {
     transform: translate(-50%, -50%);
     height: auto;
     max-width: 49em;
-    padding: 1em;
+    padding: 0.2em;
 }
 
 #image-credits-header {
@@ -417,6 +417,11 @@ iframe {
      #top_banner {
         height: 4em;
     }
+
+    #bottom_rectangle {
+        padding: 1em;
+    }
+
     
   
 
@@ -504,6 +509,10 @@ iframe {
      /*top banner sizes*/
     #top_banner {
         height: 5.5em;
+    }
+
+    #bottom_rectangle {
+        padding: 1em;
     }
 
     /*padding for images on desktops*/
@@ -608,6 +617,11 @@ iframe {
     #top_banner {
         height: 7em;
     }
+
+    #bottom_rectangle {
+        padding: 1em;
+    }
+
 
 
     /*padding for images on desktops*/
