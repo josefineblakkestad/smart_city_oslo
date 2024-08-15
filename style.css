@@ -97,6 +97,7 @@ iframe {
 
 #intro_header {
     font-size: 8em;
+    max-height: 160px;
     
 }
 
@@ -189,7 +190,7 @@ iframe {
 }
 
 .what_makes_phrases {
-    font-size: 0.5em;
+    font-size: 0.75em;
 }
 
 #read_more_image {
@@ -273,7 +274,7 @@ iframe {
 }
 
 #image-credits {
-    font-size: 0.5em;
+    font-size: 0.75em;
 }
 
 
@@ -290,7 +291,7 @@ iframe {
     .introduction {
         grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
         grid-template-rows: auto; /* Explicitly define that there's only one row */
-        row-gap: 1em;
+        row-gap: 2em;
         grid-template-areas: 
          "int int int int" 
          "ini ini ini ini";
@@ -468,6 +469,7 @@ iframe {
     /*special font sizes for different hardware sizes*/
     #intro_header {
         font-size: 12em;
+        max-height: 208px;
     }
 
     #intro_phrase {
@@ -575,6 +577,8 @@ iframe {
     /*special font sizes for different hardware sizes*/
     #intro_header {
         font-size: 14em;
+        max-height: 240px;
+        
     }
 
     #intro_phrase {
@@ -615,7 +619,7 @@ iframe {
 
     /*top banner sizes*/
     #top_banner {
-        height: 7em;
+        height: 6em;
     }
 
     #bottom_rectangle {
