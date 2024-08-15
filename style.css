@@ -29,7 +29,7 @@ iframe {
 .main_container {
     margin: 0 auto;
     display: flex;
-    gap: 8rem;
+    gap: 2rem;
     flex-direction: column;
     align-items: center;
     background-color: #D9D9D9;
@@ -44,7 +44,6 @@ iframe {
 
 .rectangle {
     background-color: #5D94C0;  
-    padding: 1em;  
 }
 
 .anton-regular {
@@ -53,7 +52,7 @@ iframe {
     font-style: normal;
   }
 
-  .anton-blue {
+.anton-blue {
     font-family: "Anton", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -70,13 +69,17 @@ iframe {
 }
 
 #top_banner {
-    height: 7.75em;
+    height: 2.5em;
     width: 100%;
+    text-align: center;
 }
 
 
 #intro_text {
     grid-area: int;
+    display: flex;
+    flex-direction: column;
+  
 }
 
 #intro_image {
@@ -86,16 +89,20 @@ iframe {
 .introduction {
     width: 82%;
     max-width: 76em;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     column-gap: 1rem;
+ 
 }
 
 #intro_header {
     font-size: 8em;
+    
 }
 
 #intro_phrase {
     font-size: 1.5em;
+    text-align: left;
 }
 
 .why_section {
@@ -112,6 +119,10 @@ iframe {
 
 #spacer2 {
     height: 2rem;
+}
+
+#spacer3 {
+    height: 8rem;
 }
 
 .why_card_panel {
@@ -172,7 +183,6 @@ iframe {
     grid-area: soa;
 }
 
-
 #what_makes {
     font-size: 2.5em;
     text-align: center;
@@ -181,21 +191,6 @@ iframe {
 .what_makes_phrases {
     font-size: 0.5em;
 }
-
-#spacer3 {
-    height: 8rem;
-}
-
-
-#spacer4 {
-    height: 2rem;
-}
-
-#spacer5 {
-    height: 2rem;
-}
-
-
 
 #read_more_image {
     grid-area: rmi;
@@ -215,7 +210,6 @@ iframe {
     column-gap: 1em;
 
 }
-
 
 #future_plans_image {
     grid-area: fpi;
@@ -244,6 +238,16 @@ iframe {
     font-size: 1.5em;
 }
 
+#carbon_link {
+    font-size: 1.5em;
+    color: black;
+
+}
+
+#carbon_link:hover {
+    color: #4CA4EB;
+}
+
 
 #bottom {
     width: 100%;
@@ -261,17 +265,7 @@ iframe {
     transform: translate(-50%, -50%);
     height: auto;
     max-width: 49em;
-}
-
-
-#carbon_link {
-    font-size: 1.5em;
-    color: black;
-
-}
-
-#carbon_link:hover {
-    color: #4CA4EB;
+    padding: 1em;
 }
 
 #image-credits-header {
@@ -284,15 +278,24 @@ iframe {
 
 
 
+
+
+
+
+
+
+
 /*grid layout*/
 /*phone*/
     .introduction {
         grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
         grid-template-rows: auto; /* Explicitly define that there's only one row */
+        row-gap: 1em;
         grid-template-areas: 
          "int int int int" 
          "ini ini ini ini";
     }
+
 
     .why_card_panel {
         row-gap: 1em;
@@ -309,25 +312,43 @@ iframe {
 
     #read_more {
         grid-template: 
-            "rmi rmi rmi rmi rmi rmi rmi rmi rmi" minmax(30rem, auto)
-            "rmt rmt rmt rmt rmt rmt rmt rmt rmt" minmax(30rem, auto)
+            "rmi rmi rmi rmi rmi rmi rmi rmi rmi" minmax(5rem, auto)
+            "rmt rmt rmt rmt rmt rmt rmt rmt rmt" minmax(5rem, auto)
     }
 
     #future_plans {
         grid-template: 
-            "fpt fpt fpt fpt fpt fpt fpt fpt fpt" minmax(30rem, auto)
-            "fpi fpi fpi fpi fpi fpi fpi fpi fpi" minmax(30rem, auto)
+            "fpt fpt fpt fpt fpt fpt fpt fpt fpt" minmax(5rem, auto)
+            "fpi fpi fpi fpi fpi fpi fpi fpi fpi" minmax(5rem, auto)
     }
+
 
   
 
     
 /*tablet*/
 @media(min-width: 40em) {
+
+    .main_container {
+        gap: 4rem;
+    }
+    
+    #intro_text {
+        grid-area: int;
+        display: flex;
+        flex-direction: row;
+    
+    }
+
     .introduction {
+        width: 82%;
+        max-width: 76em;
+        display: flex;
+        flex-direction: column;
+        column-gap: 1rem;
         grid-template-columns: repeat(9, 1fr); /* 9 equal columns */
         grid-template-rows: auto; /* Explicitly define that there's only one row */
-       grid-template-areas: 
+        grid-template-areas: 
          "int int int int int int int int int" 
          "ini ini ini ini ini ini ini ini ini";
     }
@@ -340,14 +361,14 @@ iframe {
 
     #read_more {
         grid-template: 
-            "rmi rmi rmi rmi rmi rmi rmi rmi rmi" minmax(30rem, auto)
-            "rmt rmt rmt rmt rmt rmt rmt rmt rmt" minmax(30rem, auto)
+            "rmi rmi rmi rmi rmi rmi rmi rmi rmi" minmax(10rem, auto)
+            "rmt rmt rmt rmt rmt rmt rmt rmt rmt" minmax(10rem, auto)
     }
 
     #future_plans {
         grid-template: 
-            "fpt fpt fpt fpt fpt fpt fpt fpt fpt" minmax(30rem, auto)
-            "fpi fpi fpi fpi fpi fpi fpi fpi fpi" minmax(30rem, auto)
+            "fpt fpt fpt fpt fpt fpt fpt fpt fpt" minmax(10rem, auto)
+            "fpi fpi fpi fpi fpi fpi fpi fpi fpi" minmax(10rem, auto)
     }
 
     /*special font sizes for different hardware sizes*/
@@ -357,6 +378,7 @@ iframe {
 
     #intro_phrase {
         font-size: 2em;
+        padding: 10%;
     }
 
     .anton-blue {
@@ -391,13 +413,33 @@ iframe {
         font-size: 1em;
     }
 
-    /*special gap sizes for different hardware sizes*/
+     /*top banner sizes*/
+     #top_banner {
+        height: 4em;
+    }
+    
+  
 
 }
 
 /*small desktop*/
 @media(min-width: 60em) {
+    .main_container {
+        gap: 6rem;
+    }
+
+    #intro_text {
+        display: flex;
+        flex-direction: column;
+    }
+
     .introduction {
+        width: 82%;
+        max-width: 76em;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 1rem;
         grid-template-columns: repeat(12, 1fr); /* 12 equal columns */
         grid-template-rows: auto; /* Explicitly define that there's only one row */
         grid-template-areas: 
@@ -452,21 +494,55 @@ iframe {
     }
 
     #image-credits-header {
-        font-size: 2.5;
+        font-size: 2.5em;
     }
     
     #image-credits {
         font-size: 1.5em;
     }
 
-      /*special gap sizes for different hardware sizes*/
+     /*top banner sizes*/
+    #top_banner {
+        height: 5.5em;
+    }
+
+    /*padding for images on desktops*/
+    #intro_image {
+        padding-left: 3em;
+    }
+
+    #read_more_image {
+        padding-right: 2em;
+    }
+
+    #future_plans_image {
+        padding-left: 2em;
+    }
+
+
+
 }
 
 
 
 /*desktop*/
 @media(min-width: 84em) {
+    .main_container {
+        gap: 8rem;
+    }
+
+    #intro_text {
+        display: flex;
+        flex-direction: column;
+    }
+
     .introduction {
+        width: 82%;
+        max-width: 76em;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 1rem;
         grid-template-columns: repeat(12, 1fr); /* 12 equal columns */
         grid-template-rows: auto; /* Explicitly define that there's only one row */
         grid-template-areas: 
@@ -525,10 +601,31 @@ iframe {
     }
     
     #image-credits {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
-      /*special gap sizes for different hardware sizes*/
+    /*top banner sizes*/
+    #top_banner {
+        height: 7em;
+    }
+
+
+    /*padding for images on desktops*/
+    #intro_image {
+        padding-left: 3em;
+    }
+
+    #read_more_image {
+        padding-right: 3em;
+    }
+
+    #future_plans_image {
+        padding-left: 3em;
+    }
+
+
+
+
 }
 
 
