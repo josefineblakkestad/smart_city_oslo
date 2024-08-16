@@ -150,7 +150,20 @@ hr  {
 }
 
 
-#why_img_1 {
+#why_card_1 {
+    grid-area: wc1;
+}
+
+#why_card_2 {
+    grid-area: wc2;
+}
+
+#why_card_3 {
+    grid-area: wc3;
+
+}
+
+/*#why_img_1 {
     grid-area: wh1;
 }
 
@@ -175,6 +188,7 @@ hr  {
 #why_SOA {
     grid-area: soa;
 }
+    */
 
 #what_makes {
     font-size: 2.5em;
@@ -351,12 +365,9 @@ hr  {
     .why_card_panel {
         row-gap: 1em;
         grid-template:
-            "wh1"
-            "ze"
-            "wh2"
-            "fb"
-            "wh3"
-            "soa" 
+            "wc1"
+            "wc2"
+            "wc3"
             
     }
 
@@ -406,8 +417,8 @@ hr  {
 
     .why_card_panel {
         grid-template:
-            "wh1 wh2 wh3" 
-            "ze  fb  soa" 
+            "wc1 wc2 wc3" 
+             
     }
 
     #read_more {
@@ -500,8 +511,7 @@ hr  {
     }
     .why_card_panel {
         grid-template:
-            "wh1 wh2 wh3" 
-            "ze  fb  soa" 
+            "wc1 wc2 wc3" 
     }
 
     #read_more {
@@ -606,8 +616,7 @@ hr  {
 
     .why_card_panel {
         grid-template:
-            "wh1 wh2 wh3" 
-            "ze  fb  soa" 
+            "wc1 wc2 wc3" 
     }
 
     #read_more {
