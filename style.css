@@ -142,7 +142,6 @@ hr  {
 }
 
 .why_phrases_rectangles {
-    display: flex;
     border-top: black solid 1px;
     background-color: #F5F5F5;
     height: 100%;
