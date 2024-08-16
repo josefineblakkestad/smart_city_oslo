@@ -17,14 +17,6 @@ hr  {
 
 }
 
-/*
-iframe {
-    max-width: 100%;
-    height: auto;
-}
-*/
-
-
 
 /*classes*/
 .main_container {
@@ -130,7 +122,7 @@ iframe {
 .why_card_panel {
     width: 82%;
     max-width: 76rem;
-    display: grid;
+    display: grid; /*could be this*/
     column-gap: 1em;
     /* align-items: center; */
 } 
@@ -149,7 +141,6 @@ iframe {
 }
 
 .why_phrases_rectangles {
-    display: flex;
     border-top: black solid 1px;
     background-color: #F5F5F5;
     height: 100%;
@@ -164,6 +155,7 @@ iframe {
 #why_card_2 {
     grid-area: wc2;
 }
+
 
 #why_card_3 {
     grid-area: wc3;
@@ -194,6 +186,7 @@ iframe {
 
 #why_SOA {
     grid-area: soa;
+
 } */
 
 #what_makes {
@@ -242,11 +235,6 @@ iframe {
     align-items: center;
     column-gap: 1em;
 }
-
-#what_makes {
-    font-size: 4em;
-}
-
 
 #spacer3 {
     height: 8rem;
@@ -379,6 +367,7 @@ iframe {
             "wc1"
             "wc2"
             "wc3"
+
     }
 
 
@@ -427,7 +416,9 @@ iframe {
 
     .why_card_panel {
         grid-template:
+
             "wc1 wc2 wc3";
+
     }
 
     #read_more {
@@ -521,6 +512,7 @@ iframe {
     .why_card_panel {
         grid-template:
             "wc1 wc2 wc3";
+
     }
 
     #read_more {
@@ -604,7 +596,6 @@ iframe {
     #read_more {
         grid-template: "rmi rmi rmi rmi rmi rmi rmi rmt rmt rmt rmt rmt" minmax(30rem, auto);
     }
-
 
 }
 
