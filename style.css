@@ -132,14 +132,13 @@ iframe {
     max-width: 76rem;
     display: grid;
     column-gap: 1em;
-    align-items: center;
+    /* align-items: center; */
 } 
 
 .why_card {
     border: black solid 1px;
     display: flex;
     flex-direction: column;
-    height: 100%;
     overflow: hidden;
 }
 
@@ -158,8 +157,20 @@ iframe {
     text-align: center;
 }
 
+#why_card_1 {
+    grid-area: wc1;
+}
 
-#why_img_1 {
+#why_card_2 {
+    grid-area: wc2;
+}
+
+#why_card_3 {
+    grid-area: wc3;
+}
+
+
+/* #why_img_1 {
     grid-area: wh1;
 }
 
@@ -183,7 +194,7 @@ iframe {
 
 #why_SOA {
     grid-area: soa;
-}
+} */
 
 #what_makes {
     font-size: 2.5em;
@@ -365,13 +376,9 @@ iframe {
     .why_card_panel {
         row-gap: 1em;
         grid-template:
-            "wh1"
-            "ze"
-            "wh2"
-            "fb"
-            "wh3"
-            "soa" 
-            
+            "wc1"
+            "wc2"
+            "wc3"
     }
 
 
@@ -420,8 +427,7 @@ iframe {
 
     .why_card_panel {
         grid-template:
-            "wh1 wh2 wh3" 
-            "ze  fb  soa" 
+            "wc1 wc2 wc3";
     }
 
     #read_more {
@@ -514,8 +520,7 @@ iframe {
     }
     .why_card_panel {
         grid-template:
-            "wh1 wh2 wh3" 
-            "ze  fb  soa" 
+            "wc1 wc2 wc3";
     }
 
     #read_more {
@@ -593,8 +598,7 @@ iframe {
 
     .why_card_panel {
         grid-template:
-            "wh1 wh2 wh3" 
-            "ze  fb  soa" 
+            "wc1 wc2 wc3";
     }
 
     #read_more {
@@ -632,8 +636,8 @@ iframe {
 
     .why_card_panel {
         grid-template:
-            "wh1 wh2 wh3" 
-            "ze  fb  soa" 
+            "wc1 wc2 wc3"; 
+            
     }
 
     #read_more {
