@@ -122,9 +122,9 @@ hr  {
 .why_card_panel {
     width: 82%;
     max-width: 76rem;
-    display: grid; /*could be this*/
+    display: grid; 
     column-gap: 1em;
-    /* align-items: center; */
+ 
 } 
 
 .why_card {
@@ -160,34 +160,6 @@ hr  {
 #why_card_3 {
     grid-area: wc3;
 }
-
-
-/* #why_img_1 {
-    grid-area: wh1;
-}
-
-#why_img_2 {
-    grid-area: wh2;
-    
-}
-
-#why_img_3 {
-    grid-area: wh3;
-    
-}
-
-#why_ZE {
-    grid-area: ze;
-}
-
-#why_FB {
-    grid-area: fb;
-}
-
-#why_SOA {
-    grid-area: soa;
-
-} */
 
 #what_makes {
     font-size: 2.5em;
@@ -340,7 +312,7 @@ hr  {
 }
 
 #image-credits {
-    font-size: 0.75em;
+    font-size: 0.5em;
 }
 
 
