@@ -124,14 +124,13 @@ hr  {
     max-width: 76rem;
     display: grid; /*could be this*/
     column-gap: 1em;
-    align-items: center;
+    /* align-items: center; */
 } 
 
 .why_card {
     border: black solid 1px;
     display: flex;
     flex-direction: column;
-    height: 100%;
     overflow: hidden;
 }
 
@@ -149,7 +148,6 @@ hr  {
     text-align: center;
 }
 
-
 #why_card_1 {
     grid-area: wc1;
 }
@@ -158,12 +156,13 @@ hr  {
     grid-area: wc2;
 }
 
+
 #why_card_3 {
     grid-area: wc3;
-
 }
 
-/*#why_img_1 {
+
+/* #why_img_1 {
     grid-area: wh1;
 }
 
@@ -187,8 +186,8 @@ hr  {
 
 #why_SOA {
     grid-area: soa;
-}
-    */
+
+} */
 
 #what_makes {
     font-size: 2.5em;
@@ -368,7 +367,7 @@ hr  {
             "wc1"
             "wc2"
             "wc3"
-            
+
     }
 
 
@@ -417,8 +416,9 @@ hr  {
 
     .why_card_panel {
         grid-template:
-            "wc1 wc2 wc3" 
-             
+
+            "wc1 wc2 wc3";
+
     }
 
     #read_more {
@@ -511,7 +511,8 @@ hr  {
     }
     .why_card_panel {
         grid-template:
-            "wc1 wc2 wc3" 
+            "wc1 wc2 wc3";
+
     }
 
     #read_more {
@@ -586,6 +587,16 @@ hr  {
         padding-left: 2em;
     }
 
+
+    .why_card_panel {
+        grid-template:
+            "wc1 wc2 wc3";
+    }
+
+    #read_more {
+        grid-template: "rmi rmi rmi rmi rmi rmi rmi rmt rmt rmt rmt rmt" minmax(30rem, auto);
+    }
+
 }
 
 
@@ -616,7 +627,8 @@ hr  {
 
     .why_card_panel {
         grid-template:
-            "wc1 wc2 wc3" 
+            "wc1 wc2 wc3"; 
+            
     }
 
     #read_more {
