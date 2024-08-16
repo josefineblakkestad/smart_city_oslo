@@ -367,21 +367,21 @@ hr  {
         grid-template:
             "wc1"
             "wc2"
-            "wc3"
-            
+            "wc3";
+
     }
 
 
     #read_more {
         grid-template: 
             "rmi rmi rmi rmi rmi rmi rmi rmi rmi" minmax(5rem, auto)
-            "rmt rmt rmt rmt rmt rmt rmt rmt rmt" minmax(5rem, auto)
+            "rmt rmt rmt rmt rmt rmt rmt rmt rmt" minmax(5rem, auto);
     }
 
     #future_plans {
         grid-template: 
             "fpt fpt fpt fpt fpt fpt fpt fpt fpt" minmax(5rem, auto)
-            "fpi fpi fpi fpi fpi fpi fpi fpi fpi" minmax(5rem, auto)
+            "fpi fpi fpi fpi fpi fpi fpi fpi fpi" minmax(5rem, auto);
     }
 
 
@@ -424,13 +424,13 @@ hr  {
     #read_more {
         grid-template: 
             "rmi rmi rmi rmi rmi rmi rmi rmi rmi" minmax(10rem, auto)
-            "rmt rmt rmt rmt rmt rmt rmt rmt rmt" minmax(10rem, auto)
+            "rmt rmt rmt rmt rmt rmt rmt rmt rmt" minmax(10rem, auto);
     }
 
     #future_plans {
         grid-template: 
             "fpt fpt fpt fpt fpt fpt fpt fpt fpt" minmax(10rem, auto)
-            "fpi fpi fpi fpi fpi fpi fpi fpi fpi" minmax(10rem, auto)
+            "fpi fpi fpi fpi fpi fpi fpi fpi fpi" minmax(10rem, auto);
     }
 
     /*special font sizes for different hardware sizes*/
