@@ -17,14 +17,6 @@ hr  {
 
 }
 
-/*
-iframe {
-    max-width: 100%;
-    height: auto;
-}
-*/
-
-
 
 /*classes*/
 .main_container {
@@ -130,7 +122,7 @@ iframe {
 .why_card_panel {
     width: 82%;
     max-width: 76rem;
-    display: grid;
+    display: grid; /*could be this*/
     column-gap: 1em;
     align-items: center;
 } 
@@ -584,18 +576,6 @@ iframe {
     #future_plans_image {
         padding-left: 2em;
     }
-
-
-    .why_card_panel {
-        grid-template:
-            "wh1 wh2 wh3" 
-            "ze  fb  soa" 
-    }
-
-    #read_more {
-        grid-template: "rmi rmi rmi rmi rmi rmi rmi rmt rmt rmt rmt rmt" minmax(30rem, auto);
-    }
-
 
 }
 
